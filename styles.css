@@ -36,6 +36,11 @@ h1 {
   font-size: 48px;
   padding-top: 0%;
 }
+
+footer {
+  color: white;
+}
+
 .card {
   background-color: rgba(245, 245, 245, 0.5);
   color: darkblue;
