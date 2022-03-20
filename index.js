@@ -48,11 +48,13 @@ function searchCity(city) {
 
 //Search for a city
 function showWeather(response) {
+  let iconElement = document.querySelector("#icon");
   document.querySelector("#display-city").innerHTML = response.data.name;
   document.querySelector("#temp").innerHTML = `${Math.round(
     response.data.main.temp
   )}°`;
-  document.querySelector("#skies").innerHTML = response.data.weather[0].main;
+  document.querySelector("#skies").innerHTML =
+    response.data.weather[0].description;
   document.querySelector(
     "#humid"
   ).innerHTML = `Humidity: ${response.data.main.humidity}%`;
@@ -62,6 +64,11 @@ function showWeather(response) {
   document.querySelector("#feels").innerHTML = `Feels like: ${Math.round(
     response.data.main.feels_like
   )}°`;
+  iconElement.setAttribute(
+    "src",
+    ` https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function changeName(event) {
