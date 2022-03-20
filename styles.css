@@ -15,6 +15,7 @@ body {
   border: 4px solid black;
   border-radius: 8px;
   color: aliceblue;
+  cursor: default;
   font-family: "Kalam", cursive;
   padding: 20px;
   margin-top: 30px;
@@ -48,6 +49,23 @@ img {
   margin-top: -15px;
 }
 
+a {
+  text-decoration: none;
+}
+
+input {
+  background-color: #f2f2ea;
+  border: 2px solid darkblue;
+  border-radius: 4px;
+  margin: 2px;
+  width: max-content;
+  padding: 4px;
+}
+
+input.button {
+  text-align: center;
+}
+
 .card {
   background-color: rgba(245, 245, 245, 0.5);
   color: darkblue;
@@ -70,19 +88,6 @@ img {
   font-size: 40px;
 }
 
-input {
-  background-color: #f2f2ea;
-  border: 2px solid darkblue;
-  border-radius: 4px;
-  margin: 2px;
-  width: max-content;
-  padding: 4px;
-}
-
-input.button {
-  text-align: center;
-}
-
 .time {
   font-size: large;
   text-align: center;
@@ -103,6 +108,11 @@ input.button {
   display: block;
   font-size: 22px;
   font-style: italic;
-  margin-left: 57.5%;
+  margin-left: 56%;
   margin-top: -9%;
+}
+
+.weather-temperature .active {
+  color: #48484a;
+  cursor: default;
 }
