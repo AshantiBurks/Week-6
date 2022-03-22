@@ -17,7 +17,7 @@ body {
   color: aliceblue;
   cursor: default;
   font-family: "Kalam", cursive;
-  padding: 20px;
+  padding: 27px;
   margin-top: 30px;
   max-width: 900px;
 }
@@ -43,7 +43,7 @@ footer {
   margin-left: 340px;
 }
 
-img {
+img#icon {
   position: absolute;
   margin-left: 270px;
   margin-top: -15px;
@@ -51,6 +51,10 @@ img {
 
 a {
   text-decoration: none;
+}
+
+footer.a {
+  color: darkorange;
 }
 
 input {
@@ -70,6 +74,9 @@ input.button {
   background-color: rgba(245, 245, 245, 0.5);
   color: darkblue;
   text-align: center;
+  width: 149px;
+  padding: 1px 30px;
+  margin: 3px;
 }
 
 .container {
@@ -77,15 +84,22 @@ input.button {
   padding: 20px;
 }
 
-.high,
-.low {
-  font-size: 20px;
+h5.day {
+  font-size: 32px;
+}
+
+.highLow {
+  font-size: 23px;
   text-align: center;
 }
 
 .cloudy,
 .sunny {
   font-size: 40px;
+}
+
+span.high {
+  font-weight: bold;
 }
 
 .time {
@@ -96,8 +110,11 @@ input.button {
 }
 
 .row {
-  margin: 14px;
   padding-top: 5px;
+  padding-left: 15px;
+  columns: 80px 5;
+  column-gap: 0em;
+  margin: 0in;
 }
 
 ::placeholder {
@@ -115,4 +132,11 @@ input.button {
 .weather-temperature .active {
   color: #48484a;
   cursor: default;
+}
+
+#weatherEmoji {
+  display: block;
+  margin: auto;
+  position: relative;
+  margin-top: -25%;
 }
