@@ -29,7 +29,7 @@
       <div class="weather-wrapper">
         <form class="searchkey" id="key">
           <input type="text" placeholder="Enter city name" id="searchItem" />
-          <input type="submit" value="🔍 GO" id="search-button" />
+          <input type="submit" value="🔍 GO" style="width: 8.5%;" id="search-button" />
           <input
             type="button"
             value="📍"
@@ -56,64 +56,62 @@
          <div id="wind">Wind Speed: mph</div>
          <div id="feels">Feels Like: °</div> 
         </p>
-
-        <div class="row">
-          <div class="col">
+       <div class="weather-forecast">
+         <div id="grid">
+          <div class="row">
             <div class="card">
-              <div class="card-body">
-                <h5 class="card-title day">FRI</h5>
-                <i class="cloudy">🌤️</i>
-                <br />
-                <span class="high">38°</span>
-                <span class="low">23°</span>
-              </div>
+              <span class="col">
+               <h5 class="day">FRI</h5>
+               <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="" width="80" id="weatherEmoji" />
+               <div class="highLow">
+                 <span class="high">78°</span>
+                 <span class="low">63°</span>
+                </div>
+              </span>
             </div>
-          </div>
-          <div class="col">
             <div class="card">
-              <div class="card-body">
-                <h5 class="card-title day">SAT</h5>
-                <i class="sunny">☀️</i>
-                <br />
-                <span class="high">46°</span>
-                <span class="low">27°</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
+              <span class="col">
+              <h5 class="day">SAT</h5>
+              <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="" width="80" id="weatherEmoji" />
+              <div class="highLow">
+               <span class="high">76°</span>
+               <span class="low">68°</span>
+             </div>
+              </span>
+           </div>
             <div class="card">
-              <div class="card-body">
-                <h5 class="card-title day">SUN</h5>
-                <i class="cloudy">🌤️</i>
-                <br />
-                <span class="high">51°</span>
-                <span class="low">33°</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
+              <span class="col">
+              <h5 class="day">SUN</h5>
+              <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="" width="80" id="weatherEmoji" />
+              <div class="highLow">
+               <span class="high">72°</span>
+               <span class="low">69°</span>
+             </div>
+              </span>
+           </div>
             <div class="card">
-              <div class="card-body">
-                <h5 class="card-title day">MON</h5>
-                <i class="cloudy">🌤️</i>
-                <br />
-                <span class="high">53°</span>
-                <span class="low">32°</span>
-              </div>
-            </div>
-          </div>
-          <div class="col">
+              <span class="col">
+              <h5 class="day">MON</h5>
+              <img src="https://openweathermap.org/img/wn/01d@2x.png" alt="" width="80" id="weatherEmoji"  />
+              <div class="highLow">
+               <span class="high">74°</span>
+               <span class="low">69°</span>
+             </div>
+              </span>
+           </div>
             <div class="card">
-              <div class="card-body">
-                <h5 class="card-title day">TUE</h5>
-                <i class="sunny">☀️</i>
-                <br />
-                <span class="high">59°</span>
-                <span class="low">35°</span>
-              </div>
-            </div>
+              <span class="col">
+              <h5 class="day">TUE</h5>
+              <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="" width="80" id="weatherEmoji" />
+              <div class="highLow">
+               <span class="high">72°</span>
+               <span class="low">69°</span>
+             </div>
+              </span>
+           </div>
           </div>
         </div>
+       </div>
       </div>
     </div>
     <script src="index.js"></script>
